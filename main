@@ -1,0 +1,27 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int anzahl, input;
+    cout << "Bitte geben Sie an, wieviele Zahlen Sie eingeben moechten; \n";
+
+    cin >> anzahl;
+
+    int ergebnis[anzahl];
+
+    for (int i = 0; i < anzahl; i++)
+    {
+        cout <<  "Bitte geben Sie eine Zahl ein: \n";
+        cin >> input;
+        ergebnis[i] = input * input;
+    }
+    for (int i = 0; i < anzahl; i++)
+    {
+        cout << "Quadrat: " << ergebnis[i] << "\n";
+    }
+
+    return 0;
+}
+
